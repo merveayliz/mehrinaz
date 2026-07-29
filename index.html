@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curly-Design-Studio | Butik Hediyelikler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            cream: '#FCF8F2',
+            champagne: '#F3E8DC',
+            softpink: '#F7E3E5',
+            luxurygold: '#D4AF37',
+            ink: '#2E2724',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient-border {
+      position: relative;
+      background: linear-gradient(to right, #FCF8F2, #F3E8DC);
+      padding: 3px;
+      border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    }
+    .gold-gradient-border img {
+      border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <a href="https://wa.me/905423801950" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 group animate-bounce">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <span class="absolute right-16 bg-ink text-cream text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">Hızlı Sipariş</span>
+  </a>
+
+  <div class="bg-ink text-softpink text-center py-2 px-4 text-xs font-medium tracking-wide z-50 relative">
+    <i class="fa-solid fa-sparkles text-luxurygold mr-1"></i> 100 Adet ve Üzeri Siparişlerinizde Kargo <span class="text-luxurygold font-semibold underline">BEDAVA!</span>
+  </div>
+
+  
+  <header id="main-navbar" class="fixed top-8 left-0 right-0 z-40 transition-all duration-500 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto bg-cream/80 backdrop-blur-md border border-champagne rounded-full py-3 px-6 flex items-center justify-between shadow-sm transition-all duration-300" id="navbar-container">
+      <a href="#" class="font-serif text-xl md:text-2xl font-bold tracking-tight text-ink flex items-center gap-2">
+        Curly<span class="text-luxurygold font-light text-sm italic">Design Studio</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider">
+        <a href="#hero" class="hover:text-luxurygold transition-colors duration-300">Ana Sayfa</a>
+        <a href="#katalog" class="hover:text-luxurygold transition-colors duration-300">Katalog</a>
+        <a href="#sss" class="hover:text-luxurygold transition-colors duration-300">S.S.S.</a>
+        <a href="#bilgilendirme" class="hover:text-luxurygold transition-colors duration-300">Teslimat</a>
+      </nav>
+
+      <a href="https://www.instagram.com/curlydesignstudio?igsh=OGJ0eXZubHVicTUz" target="_blank" rel="noopener noreferrer" class="bg-ink text-cream hover:bg-luxurygold hover:text-ink text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full shadow-md transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
+        <i class="fa-brands fa-instagram text-sm"></i> Takip Et
+      </a>
+    </div>
+  </header>
+
+  <section id="hero" class="min-h-screen flex items-center pt-32 pb-20 px-4 md:px-8 bg-gradient-to-b from-softpink/30 via-cream to-cream">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      
+      <div class="space-y-6 md:space-y-8 text-center lg:text-left">
+        <span class="inline-flex items-center gap-2 bg-champagne text-ink/80 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-luxurygold animate-ping"></span> Butik & Tasarım Hediyelikler
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-ink leading-[1.1]">
+          En Özel Gününüze <br>
+          <em class="font-normal italic text-luxurygold">Zarif Bir Dokunuş</em>
+        </h1>
+        <p class="text-sm md:text-base text-ink/70 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+          Nişan, kına ve doğum gibi hayatınızın dönüm noktalarında, misafirlerinize sevginizi ve zarafetinizi yansıtacak tamamen el emeği butik tasarımlar hazırlıyoruz.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="#katalog" class="w-full sm:w-auto text-center bg-luxurygold hover:bg-ink text-ink hover:text-cream font-semibold text-sm py-4 px-8 rounded-full shadow-lg shadow-luxurygold/20 transition-all duration-300 hover:-translate-y-1">
+            Kataloğu İncele <i class="fa-solid fa-arrow-right-long ml-2 text-xs"></i>
+          </a>
+          
+          <a href="https://wa.me/905423801950" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center border border-emerald-500 bg-cream/50 hover:bg-emerald-50 text-emerald-700 font-semibold text-sm py-4 px-8 rounded-full transition-all duration-300 flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> İletişime Geç
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex justify-center items-center">
+        <div class="w-72 h-72 sm:w-85 sm:h-85 md:w-96 md:h-96 bg-gradient-to-tr from-luxurygold to-softpink p-1.5 rounded-[60%_40%_70%_30%/_50%_60%_40%_50%] shadow-xl shadow-ink/5">
+          <div class="w-full h-full bg-cream overflow-hidden rounded-[60%_40%_70%_30%/_50%_60%_40%_50%] flex items-center justify-center">
+            <img src="img/pp.jpg" alt="Curly Design Studio Logo" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600'">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="bilgilendirme" class="py-8 md:py-12 bg-champagne/40 border-y border-champagne px-4 md:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        
+        <div class="bg-cream/90 border-l-4 border-luxurygold p-3.5 md:p-5 rounded-r-xl shadow-sm flex items-start gap-3 md:gap-4 transition-all duration-300 hover:shadow-md">
+          <div class="bg-luxurygold/10 text-luxurygold p-2 md:p-3 rounded-full shrink-0">
+            <i class="fa-solid fa-boxes-stacked text-base md:text-lg"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-[10px] md:text-xs uppercase tracking-wider text-ink mb-0.5 md:mb-1">Minimum Sipariş</h4>
+            <p class="text-[11px] md:text-sm text-ink/80 font-light leading-relaxed">Özel gün hediyeliklerinde minimum sipariş miktarı <strong>30 adettir</strong>.</p>
+          </div>
+        </div>
+
+        <div class="bg-cream/90 border-l-4 border-ink p-3.5 md:p-5 rounded-r-xl shadow-sm flex items-start gap-3 md:gap-4 transition-all duration-300 hover:shadow-md">
+          <div class="bg-ink/5 text-ink p-2 md:p-3 rounded-full shrink-0">
+            <i class="fa-solid fa-clock text-base md:text-lg"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-[10px] md:text-xs uppercase tracking-wider text-ink mb-0.5 md:mb-1">Teslimat Süresi</h4>
+            <p class="text-[11px] md:text-sm text-ink/80 font-light leading-relaxed">Ürünlerimiz tamamen el emeği ile hazırlanmaktadır. Teslim süresi <strong>7-15 iş günüdür</strong>.</p>
+          </div>
+        </div>
+
+        <div class="bg-cream/90 border-l-4 border-luxurygold p-3.5 md:p-5 rounded-r-xl shadow-sm flex items-start gap-3 md:gap-4 transition-all duration-300 hover:shadow-md">
+          <div class="bg-luxurygold/10 text-luxurygold p-2 md:p-3 rounded-full shrink-0">
+            <i class="fa-solid fa-truck-fast text-base md:text-lg"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-[10px] md:text-xs uppercase tracking-wider text-ink mb-0.5 md:mb-1">Kargo Koşulları</h4>
+            <p class="text-[11px] md:text-sm text-ink/80 font-light leading-relaxed">Kargo ücreti alıcıya aittir. <strong>100 adet ve üzeri</strong> kargo <strong>BEDAVA!</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="katalog" class="py-16 md:py-24 px-2 md:px-8 max-w-7xl mx-auto">
+    <div class="text-center space-y-4 mb-10 md:mb-16">
+      <span class="text-[10px] md:text-xs font-bold tracking-widest text-luxurygold uppercase block">Zarif Koleksiyonumuz</span>
+      <h2 class="font-serif text-2xl md:text-4xl lg:text-5xl font-light">Mutluluğu Paylaşan Tasarımlar</h2>
+      <div class="w-12 md:w-16 h-[2px] bg-luxurygold mx-auto mt-2 md:mt-4"></div>
+    </div>
+
+    
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-8 md:mb-12">
+      <button onclick="filterCategory('hepsi', this)" class="filter-btn active px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-wider transition-all duration-300 bg-ink text-cream border border-ink">Hepsi</button>
+      <button onclick="filterCategory('nisan', this)" class="filter-btn px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-champagne hover:border-luxurygold text-ink bg-cream">Nikah</button>
+      <button onclick="filterCategory('kina', this)" class="filter-btn px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-champagne hover:border-luxurygold text-ink bg-cream">Kına</button>
+      <button onclick="filterCategory('dogum', this)" class="filter-btn px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-champagne hover:border-luxurygold text-ink bg-cream">Doğum</button>
+    </div>
+
+
+    <!-- Ürün Kartları Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8" id="products-grid">
+      
+      <!-- 1. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="35">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+            <img src="img/1.jpeg" alt="İyi Bayramlar Tüp Kolonya - 1" class="w-full h-full object-cover shrink-0">
+            <img src="img/2.jpeg" alt="İyi Bayramlar Tüp Kolonya - 2" class="w-full h-full object-cover shrink-0">
+            <img src="img/3.jpeg" alt="İyi Bayramlar Tüp Kolonya - 3" class="w-full h-full object-cover shrink-0">
+            <img src="img/4.jpeg" alt="İyi Bayramlar Tüp Kolonya - 4" class="w-full h-full object-cover shrink-0">
+          </div>
+          <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Özel Gün</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">İnce Tüp Bayram Kolonyası</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">"İyi Bayramlar" kartlı, kurdele süslemeli şık ve ferahlatıcı cam tüp kolonya.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.050,00</span></span>
+          </div>
+
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('İnce Tüp Bayram Kolonyası', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="60">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+            <img src="img/5.jpeg" alt="Atlı Karınca Hediyelik - 1" class="w-full h-full object-cover shrink-0">
+            <img src="img/6.jpeg" alt="Atlı Karınca Hediyelik - 2" class="w-full h-full object-cover shrink-0">
+            <img src="img/7.jpeg" alt="Atlı Karınca Hediyelik - 3" class="w-full h-full object-cover shrink-0">
+          </div>
+          <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Doğum & Doğum Günü</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Nostaljik Atlı Karınca</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Masalsı konseptli, detay işlemeli ve kişiselleştirilebilir isim kartlı atlı karınca.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.800,00</span></span>
+          </div>
+
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Nostaljik Atlı Karınca', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="35">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+            <img src="img/8.jpeg" alt="Pembe Çiçekli Bayram Kolonyası - 1" class="w-full h-full object-cover shrink-0">
+            <img src="img/9.jpeg" alt="Pembe Çiçekli Bayram Kolonyası - 2" class="w-full h-full object-cover shrink-0">
+          </div>
+          <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Özel Gün</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Pembe Çiçekli Bayram Kolonyası</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Zarif pembe kuru çiçekler ve fiyonk süslemeli şık cam tüp kolonya.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.050,00</span></span>
+          </div>
+    
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Pembe Çiçekli Bayram Kolonyası', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 4. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="40">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/10.jpeg" alt="4 Yapraklı Yonca Kına Bilekliği" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Kına</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Yonca Figürlü Kına Bilekliği</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Kırmızı örgü ipli, şans getiren 4 yapraklı yonca detaylı kına hatırası bileklik.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+          </div>
+
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Yonca Figürlü Kına Bilekliği', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="55">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/11.jpeg" alt="Türk Kahvesi ve Bademli Çikolata İkili Set" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Söz & Nişan</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kahve & Çikolata Gurme Set</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Taze çekim Türk kahvesi ve bademli beyaz çikolata içeren mantar kapaklı ikili tüp seti.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.650,00</span></span>
+          </div>
+          
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Kahve & Çikolata Gurme Set', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/12.jpeg" alt="İsimli Bulut Pleksi Anahtarlık" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Doğum Günü</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kişiye Özel Bulut Pleksi Anahtarlık</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Sağlam bulut zemin üzerine isim baskılı, isteğe bağlı prenses ve resim değişimli özel anahtarlık.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Kişiye Özel Bulut Pleksi Anahtarlık', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/13.jpeg" alt="Bubble Mum Hediyelik" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Nişan</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Bubble (Baloncuk) Dekoratif Mum</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Estetik baloncuk tasarımlı, kurdele ve isim kartı detaylı el yapımı dekoratif mum.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Bubble Dekoratif Mum', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="50">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/14.jpeg" alt="Nikah Hediyelik Ahşap Yelpaze" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Söz</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Zarif Ahşap Nikah Yelpazesi</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Sade ve şık tasarımlı, özel isim baskılı ve dantel kurdele süslemeli nikah yelpazesi.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Zarif Ahşap Nikah Yelpazesi', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+<!-- 9. ÜRÜN:  -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="50">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+      <img src="img/15.jpeg" alt="Kırmızı Çiçekli Kına Yelpazesi - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/20.jpeg" alt="Kırmızı Çiçekli Kına Yelpazesi - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Kına Gecesi</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kırmızı Çiçekli Kına Yelpazesi</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Kına geceleri için özel, canlı kırmızı çiçek ve püskül detaylı, kişiselleştirilmiş ahşap yelpaze.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
+    </div>
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Kırmızı Çiçekli Kına Yelpazesi', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 10. ÜRÜN:-->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="50">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+      <!-- 19 ve 20 numaralı görseller -->
+      <img src="img/18.jpeg" alt="Konsept Çiçekli Kına Yelpazesi - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/19.jpeg" alt="Konsept Çiçekli Kına Yelpazesi - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Kına Gecesi</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Özel Renk Çiçekli Kına Yelpazesi</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Kına ve bekarlığa veda konseptlerinize özel, renkli çiçek aranjmanlı ve isim etiketli ahşap yelpaze.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
+    </div>
+      <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Özel Renk Çiçekli Kına Yelpazesi', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+      <!-- 11. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+            <img src="img/16.jpeg" alt="Kelebek Tasarımlı Kolonya - 1" class="w-full h-full object-cover shrink-0">
+            <img src="img/17.jpeg" alt="Kelebek Tasarımlı Kolonya - 2" class="w-full h-full object-cover shrink-0">
+            <img src="img/49.jpeg" alt="Kelebek Tasarımlı Kolonya - 3" class="w-full h-full object-cover shrink-0">
+          </div>
+          <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Nikah & Nişan</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kelebek Konseptli Şişe Kolonya</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Zarif kelebek figürlü, isim kartlı ferahlatıcı cam şişe kolonya hediyeliği.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Kelebek Konseptli Şişe Kolonya', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/37.jpeg" alt="Tavşan Temalı Doğum Hediyeliği" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Doğum & Bebek</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Sevimli Tavşan Temalı Hediyelik</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Bebek doğumu ve yaş günleri için sevimli tavşan illüstrasyonlu özel tasarım kartlı hediyelik.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+          </div>
+
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Sevimli Tavşan Temalı Hediyelik', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="35">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/38.jpeg" alt="Mantar Tıpalı Tüp Kolonya" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Nişan</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1"> Yıldız Anahtarlı & Kartlı Kalem Tüp Kolonya</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Düz minimalist kart üzerine monte edilmiş,Kalem  cam tüp kolonya.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.950,00</span></span>
+          </div>
+
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Mantar Tıpalı Kartlı Tüp Kolonya', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="30">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+            <img src="img/21.jpeg" alt="Tüp Şişede Kına - 1" class="w-full h-full object-cover shrink-0">
+            <img src="img/22.jpeg" alt="Tüp Şişede Kına - 2" class="w-full h-full object-cover shrink-0">
+          </div>
+          <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Kına Gecesi</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Şık Cam Tüpte Hediyelik Kına</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Mantar tıpalı cam tüp içerisinde taze kına, kurdele ve isim etiketi süslemeli.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">900,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Şık Cam Tüpte Hediyelik Kına', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+<!-- 15. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="80">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+    <img src="img/23.jpeg" alt="Renkli Boncuklu İsimli Anahtarlık" class="w-full h-full object-cover">
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Özel Gün</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Renkli Boncuklu İsimli Anahtarlık</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Canlı renkli boncuk dizilimli, harfli ve kişiye özel isim tasarımlı şık anahtarlık. (30 adet ve üzeri alımlarda adet fiyatı ₺50)</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <!-- Min adet 1 olarak güncellendi -->
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 1</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">80,00</span></span>
+    </div>
+      <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <!-- Adet değişimi 1'erli yapıldı -->
+        <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Renkli Boncuklu İsimli Anahtarlık', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 16. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="35">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+      <img src="img/24.jpeg" alt="Kişiye Özel Açacaklı Magnet" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Doğum & Bebek</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <!-- Başlık ve metin açacaklı magnet konseptine uygun şekilde güncellendi -->
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kişiye Özel Tasarım Açacaklı Magnet</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">İsim, tarih ve Hoş Geldin Bebek mesajı yazılı, isteğe göre fotoğraf ve konsept uyarlamalı açacaklı magnet hatıralık.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <!-- Min adet 30 ve fiyat 30 adet için 1.050 TL yapıldı (Birim: ₺35) -->
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.050,00</span></span>
+    </div>
+      <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <!-- Min 30 adet kuralına uygun artış ve azalış -->
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Kişiye Özel Tasarım Açacaklı Magnet', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- 17. ÜRÜN -->
+      <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="1500">
+        <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+          <img src="img/26.jpeg" alt="Cam Kutulu Nikah Çikolatası" class="w-full h-full object-cover">
+          <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Söz</span>
+        </div>
+        <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+          <div>
+            <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Cam Kutuda 100'lü Nikah Çikolatası</h3>
+            <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Gold detaylı şeffaf cam kutu içerisinde isim sarmalı 100 adet özel nikah çikolatası.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+            <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-box text-luxurygold mr-0.5"></i> Kutuda 100 Çikolata</span>
+            <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
+          </div>
+            <!-- İNCELE BUTONU -->
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+          <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+            <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+              <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+              <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+              <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+            </div>
+            <button onclick="openOrderModal('Cam Kutuda 100\'lü Nikah Çikolatası', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+              Sipariş Ver
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 18. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="45">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+    
+      <img src="img/31.jpeg" alt="Altıgen Şişe Mühürlü Kolonya - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/28.jpeg" alt="Altıgen Şişe Mühürlü Kolonya - 2" class="w-full h-full object-cover shrink-0">
+      <img src="img/27.jpeg" alt="Altıgen Şişe Mühürlü Kolonya - 3" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Nikah & Söz</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Mühürlü & Kurdeleli Altıgen Şişe Kolonya</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Özel isim etiketli, mühür baskılı ve beyaz kurdele detaylı zarif altıgen cam şişe kolonya.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.350,00</span></span>
+    </div>
+      
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Mühürlü Altıgen Şişe Kolonya', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 19. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+   
+      <img src="img/32.jpeg" alt="Tavşan Figürlü Epoksi Magnet - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/33.jpeg" alt="Tavşan Figürlü Epoksi Magnet - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Doğum & Bebek</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Resimli Tavşan Figürlü Epoksi Magnet Seti</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">El emeği ile boyanan sevimli tavşan figürlü epoksi magnet. İsteğe bağlı renk ve fotoğraf değiştirilebilir.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+    </div>
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Resimli Tavşan Figürlü Epoksi Magnet Seti', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 20. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+   
+      <img src="img/46.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/47.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Doğum & Bebek</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">El Emeği Boyamalı Epoksi Tavşan Magnet</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Özenle el boyaması yapılan sevimli epoksi tavşan tasarım. İsteğe göre renk ve resim uyarlanabilir.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+    </div>
+    
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('El Emeği Boyamalı Epoksi Tavşan Magnet', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 21. ÜRÜN:  -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="2850">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+
+      <img src="img/41.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/45.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Lüks Set</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Karton Kutulu Çikolata & Kolonya Seti</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Şık cam kutu içinde 100 adet özel sarmalı çikolata (₺1.500) ve 50 adet kolonya (₺1.350) içeren lüks set.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-box text-luxurygold mr-0.5"></i> 100 Çikolata + 50 Kolonya</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">2.850,00</span></span>
+    </div>
+    
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Cam Kutulu Çikolata & Kolonya Seti', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 22. ÜRÜN:  -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="2850">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+ 
+      <img src="img/set.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/set1.jpeg" alt="El Boyaması Epoksi Tavşan Magnet - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Lüks Set</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Cam Kutulu Çikolata & Kolonya Seti</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Şık cam kutu içinde 100 adet özel sarmalı çikolata (₺1.500) ve 50 adet kolonya (₺1.350) içeren lüks set.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-box text-luxurygold mr-0.5"></i> 100 Çikolata + 50 Kolonya</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">2.850,00</span></span>
+    </div>
+    
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Cam Kutulu Çikolata & Kolonya Seti', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- 23. ÜRÜN: -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="30">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+    <img src="img/39.jpeg" alt="Sihirli Tohumlu Çiçek Hediyelik" class="w-full h-full object-cover">
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Özel Gün</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Sihirli Tohumlu Çiçek Hediyeliği</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Rengarenk çiçek formunda özel tasarım, toprağa dikilebilir sihirli tohum hatıralığı.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">900,00</span></span>
+    </div>
+          <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+          </button>
+          
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Sihirli Tohumlu Çiçek Hediyeliği', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 24. ÜRÜN:-->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="45">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+    <img src="img/40.jpeg" alt="Resimli Kapaklı Cep Aynası" class="w-full h-full object-cover">
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Özel Gün</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Fotoğraf Baskılı Kapaklı Cep Aynası</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Anneler günü, doğum günü ve özel günler için kapağına kişiye özel resim basılan şık ayna.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.350,00</span></span>
+    </div>
+
+    <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+    </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Fotoğraf Baskılı Kapaklı Cep Aynası', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 25. ÜRÜN:-->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="45">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+    <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
+      
+      <img src="img/43.jpeg" alt="Özel Tasarım Kapaklı Cep Aynası - 1" class="w-full h-full object-cover shrink-0">
+      <img src="img/44.jpeg" alt="Özel Tasarım Kapaklı Cep Aynası - 2" class="w-full h-full object-cover shrink-0">
+    </div>
+    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm z-10">Hediyelik</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Özel Tasarım Resimli Kapaklı Cep Aynası</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Kapağı özel baskılı, kompakt ve kullanışlı metal çerçeveli hediyelik kapaklı cep aynası.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.350,00</span></span>
+    </div>
+
+    <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+    </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Özel Tasarım Resimli Kapaklı Cep Aynası', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 26. ÜRÜN:-->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+    <img src="img/36.jpeg" alt="Lotus Mum Hediyelik" class="w-full h-full object-cover">
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Nişan</span>
+  </div>
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Zarif Lotus Çiçeği Dekoratif Mum</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Lotus çiçeği formunda hazırlanmış, özel isim etiketli ve kurdele süslemeli dekoratif mum.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
+    </div>
+
+    <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+    </button>
+
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Lotus Çiçeği Dekoratif Mum', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- 27. ÜRÜN: Kod -->
+<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="bebek" data-unit-price="4300">
+  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+   
+    <img src="img/set2.jpeg" alt="Tavşan Konseptli Pembe Set" class="w-full h-full object-cover">
+    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Bebek & Doğum</span>
+  </div>
+
+  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
+    <div>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Tavşan Konseptli Pembe Set</h3>
+      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">50 Adet Kolonya, 100 Adet Çikolata, Özel İsimli Kutu ve Ahşap Duvar Panosu Dahil Set.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
+      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 1 Set</span>
+      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">4.300,00</span></span>
+    </div>
+    <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
+      <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
+    </button>
+    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
+      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
+        <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
+        <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
+        <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
+      </div>
+      <button onclick="openOrderModal('Tavşan Konseptli Pembe Set', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
+        Sipariş Ver
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+  </section>
+
+    </div>
+  </section>
+  <section id="sss" class="py-16 bg-champagne/30 px-4 md:px-8 border-y border-champagne/60">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="text-center space-y-2 mb-8">
+        <span class="text-[10px] md:text-xs font-bold tracking-widest text-luxurygold uppercase block">Merak Edilenler</span>
+        <h2 class="font-serif text-2xl md:text-3xl font-light text-ink">Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div class="space-y-3">
+        <!-- 1. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Sipariş süreci nasıl işliyor ve kapora zorunlu mu?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Kişiye özel tasarım hazırlandığı için siparişinizin onaylanması adına %50 kapora ödemesi talep edilmektedir. Kalan tutar ürünleriniz kargolanmadan önce iletilir.
+          </div>
+        </div>
+
+        <!-- 2. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Kişiselleştirme (isim/tarih) değişikliklerini nereden iletiyoruz?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Sipariş ver butonuna bastığınızda açılan form üzerinden ve otomatik WhatsApp yönlendirmesiyle isim, tarih veya konsept detaylarınızı eksiksiz iletebilirsiniz.
+          </div>
+        </div>
+
+        <!-- 3. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Minimum sipariş adedinin altında sipariş verebilir miyim?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Atölye üretim süreçlerimiz ve malzeme hazırlıkları sebebiyle minimum sipariş miktarımız 30 adettir. Özel çikolata kutulu setlerimizde ise minimum sipariş 1 kutudur.
+          </div>
+        </div>
+
+        <!-- 4. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Siparişler ne kadar sürede kargoya verilir?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Tüm ürünlerimiz el işçiliğiyle hazırlandığı için hazırlık süresi yoğunluğa göre 7-15 iş günü arasındadır. Acil organizasyonlarınız için sipariş öncesinde WhatsApp üzerinden bizimle iletişime geçebilirsiniz.
+          </div>
+        </div>
+
+        <!-- 5. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Kargo ücreti kime aittir ve ücretsiz kargo şartı nedir?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Kargo ücreti alıcıya aittir. Ancak 100 adet ve üzeri siparişlerinizde kargo ücreti tarafımızdan karşılanmaktadır (ÜCRETSİZ KARGO).
+          </div>
+        </div>
+
+        <!-- 6. Soru -->
+        <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
+            <span>Ürünlerde renk, çiçek veya kurdele konsepti değiştirilebilir mi?</span>
+            <i class="fa-solid fa-chevron-down text-luxurygold transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-4 pt-0 text-xs text-ink/75 font-light leading-relaxed border-t border-champagne/40 bg-white/50">
+            Evet, organizasyon temanıza veya kişisel zevkinize göre kurdele rengi, çiçek türü ve kart konsepti üzerinde dilediğiniz güncellemeleri yapabiliyoruz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/70 text-xs py-8 px-4 border-t border-champagne/20 text-center">
+    <div class="flex justify-center gap-6 mb-4 text-base">
+      <a href="https://wa.me/905423801950" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/curlydesignstudio?igsh=OGJ0eXZubHVicTUz" target="_blank" rel="noopener noreferrer" class="hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2026 Curly-Design-Studio.</p>
+   <p class="mt-1 font-light">
+  <a href="https://www.instagram.com/ayliz.dev?igsh=dTNvdDQ3MXpia2h3" target="_blank" rel="noopener noreferrer" class="text-luxurygold/60 hover:text-luxurygold transition-colors duration-300">
+    <i class="fa-brands fa-instagram text-[10px] mr-1"></i>aylizdev
+  </a>
+</p>
+  </footer>
+
+
+  
+  <!-- ÜRÜN İNCELEME FOTO MODALI (NET & EKSİKSİZ BÜYÜTME) -->
+  <div id="image-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" onclick="closeImageModal()">
+    <div class="relative max-w-4xl max-h-[90vh] w-full bg-cream rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center p-2 md:p-4" onclick="event.stopPropagation()">
+      <button onclick="closeImageModal()" class="absolute top-3 right-3 bg-ink/70 hover:bg-ink text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors z-20">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="w-full flex items-center justify-center overflow-hidden rounded-xl bg-black/5">
+        <img id="modal-img" src="" alt="Ürün Detayı" class="max-h-[80vh] w-auto object-contain rounded-xl shadow-md">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sipariş Modalı -->
+  <div id="order-modal" class="fixed inset-0 z-50 bg-ink/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="bg-cream border border-luxurygold/30 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col">
+      <div class="bg-gradient-to-r from-ink to-ink/90 p-6 text-cream relative shrink-0">
+        <h3 class="font-serif text-xl font-medium tracking-wide">Sipariş & Kapora Detay Kartı</h3>
+        <p class="text-[11px] text-softpink font-light mt-1"><span id="modal-product-name" class="font-semibold text-luxurygold"></span></p>
+        <button onclick="closeOrderModal()" class="absolute top-5 right-5 text-cream/70 hover:text-cream text-lg transition-colors"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="p-6 space-y-5 overflow-y-auto">
+        <div class="bg-champagne/50 border border-champagne rounded-xl p-4 space-y-2 text-xs text-ink">
+          <div class="flex justify-between items-center border-b border-champagne/80 pb-1.5">
+            <span>Sipariş Adedi:</span>
+            <span class="font-bold" id="modal-product-qty">0 Adet</span>
+          </div>
+          <div class="flex justify-between items-center border-b border-champagne/80 pb-1.5">
+            <span>Toplam Sipariş Tutarı:</span>
+            <span class="font-bold text-sm" id="modal-total-price">₺0,00</span>
+          </div>
+          <div class="flex justify-between items-center pt-1 font-bold text-ink">
+            <span class="text-luxurygold uppercase tracking-wider">Ödenecek %50 Kapora:</span>
+            <span class="text-base bg-luxurygold/20 px-2.5 py-0.5 rounded text-ink" id="modal-deposit-price">₺0,00</span>
+          </div>
+        </div>
+
+        <div class="bg-champagne/30 border border-champagne rounded-xl p-4 space-y-3">
+          <div class="flex items-center gap-2 text-luxurygold font-semibold text-xs uppercase tracking-wider">
+            <i class="fa-solid fa-building-columns"></i> Banka Hesap Bilgileri
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-xs text-ink/80 border-b border-champagne/60 pb-2">
+            <span class="font-medium">Banka Adı:</span>
+            <span class="col-span-2">İNG Bankası</span>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-xs text-ink/80 border-b border-champagne/60 pb-2">
+            <span class="font-medium">Alıcı:</span>
+            <span class="col-span-2">Mehrinaz Aleyna ÖZCAN</span>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-xs text-ink/80">
+            <span class="font-medium">IBAN:</span>
+            <span class="col-span-2 font-mono tracking-tight select-all bg-white/80 px-2 py-0.5 rounded border border-champagne flex items-center justify-between">
+              TR56 0009 9029 1498 1800 1000 02
+              <i class="fa-regular fa-copy text-luxurygold cursor-pointer" title="Kopyala" onclick="navigator.clipboard.writeText('TR99 0001 2000 3000 4000 5000 66')"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="bg-softpink/40 border border-softpink p-3.5 rounded-xl flex gap-3 text-xs text-ink/90">
+          <i class="fa-solid fa-triangle-exclamation text-luxurygold mt-0.5 shrink-0"></i>
+          <p class="font-light">Kapora ödemenizi gerçekleştirdikten sonra bilgilerinizi doldurarak <strong>Siparişi Tamamla</strong> butonuna basınız.</p>
+        </div>
+
+        <form id="whatsapp-order-form" onsubmit="submitOrder(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-ink/70 uppercase tracking-wide mb-1.5">Müşteri Ad-Soyad</label>
+            <input type="text" id="cust-name" required class="w-full px-4 py-3 rounded-xl border border-champagne bg-white text-sm focus:outline-none focus:border-luxurygold transition-colors">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-ink/70 uppercase tracking-wide mb-1.5">Ödeme Yapan Dekont Sahibi</label>
+            <input type="text" id="cust-payment" required class="w-full px-4 py-3 rounded-xl border border-champagne bg-white text-sm focus:outline-none focus:border-luxurygold transition-colors">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-ink/70 uppercase tracking-wide mb-1.5">Kargo Adresi & Özel Notlar</label>
+            <textarea id="cust-address" required rows="2" class="w-full px-4 py-3 rounded-xl border border-champagne bg-white text-sm focus:outline-none focus:border-luxurygold transition-colors resize-none"></textarea>
+          </div>
+          
+          <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 mt-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Siparişi Tamamla ve WhatsApp'a İlet
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script>
+    let activeOrder = { productName: '', quantity: 30, unitPrice: 0, total: 0, deposit: 0 };
+    const SHOP_PHONE = "905423801950"; 
+
+    function formatCurrency(val) {
+      return val.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.product-card').forEach(card => {
+        calculateCardTotal(card);
+      });
+
+      document.querySelectorAll('.product-card').forEach(card => {
+        const imgContainer = card.querySelector('.product-slider') || card.querySelector('img');
+        const title = card.querySelector('h3');
+        
+        if (imgContainer) imgContainer.classList.add('cursor-pointer');
+        if (title) title.classList.add('cursor-pointer');
+
+        [imgContainer, title].forEach(el => {
+          if (el) {
+            el.addEventListener('click', (e) => {
+              if (!e.target.closest('button')) {
+                openProductDetailModal(card);
+              }
+            });
+          }
+        });
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('main-navbar');
+      const container = document.getElementById('navbar-container');
+      
+      if (window.scrollY > 50) {
+        navbar.classList.remove('top-8');
+        navbar.classList.add('top-0', 'px-0', 'md:px-0');
+        container.classList.remove('rounded-full', 'bg-cream/80');
+        container.classList.add('rounded-none', 'bg-cream/95', 'border-x-0', 'border-t-0', 'py-4', 'shadow-md');
+      } else {
+        navbar.classList.remove('top-0', 'px-0', 'md:px-0');
+        navbar.classList.add('top-8');
+        container.classList.remove('rounded-none', 'bg-cream/95', 'border-x-0', 'border-t-0', 'py-4', 'shadow-md');
+        container.classList.add('rounded-full', 'bg-cream/80');
+      }
+    });
+
+    function changeQty(btn, amount, e) {
+      if(e) e.stopPropagation();
+      const card = btn.closest('.product-card');
+      const input = card.querySelector('.qty-input');
+      let currentVal = parseInt(input.value) || 30;
+      currentVal += amount;
+      
+      const minQty = parseInt(input.getAttribute('min')) || 1;
+      if (currentVal < minQty) currentVal = minQty;
+      input.value = currentVal;
+
+      calculateCardTotal(card);
+    }
+
+    function calculateCardTotal(card) {
+      const unitPrice = parseFloat(card.getAttribute('data-unit-price')) || 0;
+      const qty = parseInt(card.querySelector('.qty-input').value) || 30;
+      const total = unitPrice * qty;
+
+      card.querySelector('.total-price-display').innerText = formatCurrency(total);
+    }
+
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+
+      answer.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-ink', 'text-cream', 'active');
+        b.classList.add('bg-cream', 'text-ink');
+      });
+
+      if (btn) {
+        btn.classList.remove('bg-cream', 'text-ink');
+        btn.classList.add('bg-ink', 'text-cream', 'active');
+      }
+
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (cat === 'hepsi' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openOrderModal(title, btn, e) {
+      if(e) e.stopPropagation();
+      const card = btn.closest('.product-card');
+      const unitPrice = parseFloat(card.getAttribute('data-unit-price')) || 0;
+      const qty = parseInt(card.querySelector('.qty-input').value) || 30;
+      const total = unitPrice * qty;
+      const deposit = total * 0.5;
+
+      activeOrder = { productName: title, quantity: qty, unitPrice, total, deposit };
+
+      document.getElementById('modal-product-name').innerText = title;
+      document.getElementById('modal-product-qty').innerText = `${qty} Adet`;
+      document.getElementById('modal-total-price').innerText = `₺${formatCurrency(total)}`;
+      document.getElementById('modal-deposit-price').innerText = `₺${formatCurrency(deposit)}`;
+
+      const modal = document.getElementById('order-modal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.children[0].classList.remove('scale-95');
+      modal.children[0].classList.add('scale-100');
+    }
+
+    function closeOrderModal() {
+      const modal = document.getElementById('order-modal');
+      modal.children[0].classList.remove('scale-100');
+      modal.children[0].classList.add('scale-95');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    // --- GÜNCELLENEN DEDAY MODAL FONKSİYONU ---
+    function openProductDetailModal(card) {
+      const imgs = card.querySelectorAll('.product-slider img, img');
+      const title = card.querySelector('h3').innerText;
+      const desc = card.querySelector('p').innerText;
+      const category = card.querySelector('[class*="bg-white/90"]')?.innerText || 'Hediyelik';
+      const unitPrice = card.getAttribute('data-unit-price');
+
+      const modalSlider = document.getElementById('detail-modal-slider');
+      modalSlider.innerHTML = '';
+      modalSlider.setAttribute('data-index', '0');
+      modalSlider.style.transform = 'translateX(0%)';
+
+      imgs.forEach(img => {
+        const newImg = document.createElement('img');
+        newImg.src = img.src;
+        newImg.alt = img.alt || title;
+        newImg.className = 'w-full h-full object-cover shrink-0 cursor-zoom-in'; // Tıklanabilir kursör eklendi
+        
+        // Fotoğrafa tıklayınca tam ekran büyük halini açma tetikleyicisi
+        newImg.onclick = () => openImageModal(img.src);
+        
+        modalSlider.appendChild(newImg);
+      });
+
+      const prevBtn = document.getElementById('detail-modal-prev-btn');
+      const nextBtn = document.getElementById('detail-modal-next-btn');
+      if (imgs.length > 1) {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+      } else {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      }
+
+      document.getElementById('detail-modal-title').innerText = title;
+      document.getElementById('detail-modal-desc').innerText = desc;
+      document.getElementById('detail-modal-category').innerText = category;
+      document.getElementById('detail-modal-unit-price').innerText = `₺${unitPrice} / Adet`;
+
+      const orderBtn = document.getElementById('detail-modal-order-btn');
+      orderBtn.onclick = (e) => {
+        closeProductDetailModal();
+        const cardOrderBtn = card.querySelector('button[onclick*="openOrderModal"]');
+        openOrderModal(title, cardOrderBtn, e);
+      };
+
+      const modal = document.getElementById('product-detail-modal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      const innerCard = modal.children[0];
+      innerCard.classList.remove('scale-95');
+      innerCard.classList.add('scale-100');
+    }
+
+    function closeProductDetailModal() {
+      const modal = document.getElementById('product-detail-modal');
+      const innerCard = modal.children[0];
+      
+      innerCard.classList.remove('scale-100');
+      innerCard.classList.add('scale-95');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    function submitOrder(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('cust-name').value.trim();
+      const paymentHolder = document.getElementById('cust-payment').value.trim();
+      const address = document.getElementById('cust-address').value.trim();
+
+      const messageText = `Merhaba Curly-Design-Studio! ${activeOrder.productName} ürününüzden ${activeOrder.quantity} adet için sipariş oluşturmak istiyorum.\n\n` +
+                          ` Sipariş Adedi: ${activeOrder.quantity} Adet\n` +
+                          ` Toplam Tutar: ₺${formatCurrency(activeOrder.total)}\n` +
+                          ` Ödenmesi Gereken %50 Kapora: ₺${formatCurrency(activeOrder.deposit)}\n\n` +
+                          `Dekont Sahibi: ${paymentHolder}\n` +
+                          `Müşteri Ad-Soyad: ${name}\n` +
+                          `Kargo Adresi / Not: ${address}\n\n` +
+                          `Kapora ödememi gerçekleştirdim, siparişimin onaylanmasını rica ederim.`;
+      
+      const encodedMessage = encodeURIComponent(messageText);
+      const whatsappUrl = `https://wa.me/${SHOP_PHONE}?text=${encodedMessage}`;
+
+      window.open(whatsappUrl, '_blank');
+      closeOrderModal();
+    }
+
+    function slideProductImg(btn, direction, e) {
+      if(e) e.stopPropagation();
+      const container = btn.parentElement;
+      const slider = container.querySelector('.product-slider');
+      const totalImages = slider.children.length;
+      
+      let currentIndex = parseInt(slider.getAttribute('data-index') || 0);
+      currentIndex += direction;
+
+      if (currentIndex < 0) currentIndex = totalImages - 1;
+      if (currentIndex >= totalImages) currentIndex = 0;
+
+      slider.setAttribute('data-index', currentIndex);
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Fotoğraf Modalı Açma (Kart Görseline Tıklandığında)
+    function openImageModal(container) {
+      const slider = container.querySelector('.product-slider');
+      let activeImgSrc = "";
+      if (slider) {
+        const imgs = slider.querySelectorAll('img');
+        const currentIndex = parseInt(slider.dataset.currentIndex || 0);
+        activeImgSrc = imgs[currentIndex].src;
+      } else {
+        const img = container.querySelector('img');
+        activeImgSrc = img.src;
+      }
+      
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      modalImg.src = activeImgSrc;
+      modal.classList.remove('hidden');
+    }
+
+    // Fotoğraf Modalı Açma ("İncele" Butonuna Basıldığında)
+    function openImageModalFromBtn(btn, event) {
+      if(event) event.stopPropagation();
+      const card = btn.closest('.product-card');
+      const imgContainer = card.querySelector('.relative.overflow-hidden');
+      openImageModal(imgContainer);
+    }
+
+    function closeImageModal() {
+      document.getElementById('image-modal').classList.add('hidden');
+    }
+
+</script>
+</body>
+</html>
