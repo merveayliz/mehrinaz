@@ -7,8 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <meta name="google-site-verification" content="NZxkmYr02w1Bcch_ai-yj-g_VItD9m7j43PX8OvRRwo" />
-  <link rel="icon" type="image/jpeg" href="img/pp.jpg">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
@@ -31,7 +30,9 @@
       }
     }
   </script>
+
   <style>
+
     .gold-gradient-border {
       position: relative;
       background: linear-gradient(to right, #FCF8F2, #F3E8DC);
@@ -41,7 +42,41 @@
     .gold-gradient-border img {
       border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
     }
-  </style>
+
+  #ai-chat-drawer {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  }
+  #ai-chat-drawer.chat-closed {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+  }
+  #ai-chat-drawer.chat-open {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .chat-bubble-user {
+    background-color: #2E2724;
+    color: #FCF8F2;
+    border-radius: 16px 16px 2px 16px;
+  }
+  .chat-bubble-ai {
+    background-color: #F3E8DC;
+    color: #2E2724;
+    border: 1px solid #F3E8DC;
+    border-radius: 16px 16px 16px 2px;
+  }
+  
+  .chat-messages-container::-webkit-scrollbar {
+    width: 4px;
+  }
+  .chat-messages-container::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+  }
+</style>
+
 </head>
 <body class="bg-cream text-ink font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
 
@@ -165,10 +200,10 @@
     </div>
 
 
-    <!-- Ürün Kartları Grid -->
+    
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8" id="products-grid">
       
-      <!-- 1. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="35">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
           <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -213,7 +248,7 @@
       </div>
 
 
-      <!-- 2. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="60">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
           <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -257,7 +292,7 @@
       </div>
 
 
-      <!-- 3. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="35">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
           <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -300,7 +335,7 @@
       </div>
 
 
-      <!-- 4. ÜRÜN -->
+
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="40">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/10.jpeg" alt="4 Yapraklı Yonca Kına Bilekliği" class="w-full h-full object-cover">
@@ -334,7 +369,7 @@
       </div>
 
 
-      <!-- 5. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="55">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/11.jpeg" alt="Türk Kahvesi ve Bademli Çikolata İkili Set" class="w-full h-full object-cover">
@@ -367,7 +402,7 @@
         </div>
       </div>
 
-      <!-- 6. ÜRÜN -->
+
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/12.jpeg" alt="İsimli Bulut Pleksi Anahtarlık" class="w-full h-full object-cover">
@@ -382,7 +417,7 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+         
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -400,7 +435,7 @@
         </div>
       </div>
 
-      <!-- 7. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/13.jpeg" alt="Bubble Mum Hediyelik" class="w-full h-full object-cover">
@@ -415,7 +450,7 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+         
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -433,7 +468,7 @@
         </div>
       </div>
 
-      <!-- 8. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="50">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/14.jpeg" alt="Nikah Hediyelik Ahşap Yelpaze" class="w-full h-full object-cover">
@@ -448,7 +483,8 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+        
+          
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -466,7 +502,7 @@
         </div>
       </div>
 
-<!-- 9. ÜRÜN:  -->
+      
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="50">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -507,11 +543,11 @@
   </div>
 </div>
 
-<!-- 10. ÜRÜN:-->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="50">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
-      <!-- 19 ve 20 numaralı görseller -->
+      
       <img src="img/18.jpeg" alt="Konsept Çiçekli Kına Yelpazesi - 1" class="w-full h-full object-cover shrink-0">
       <img src="img/19.jpeg" alt="Konsept Çiçekli Kına Yelpazesi - 2" class="w-full h-full object-cover shrink-0">
     </div>
@@ -532,7 +568,8 @@
       <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
       <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
     </div>
-      <!-- İNCELE BUTONU -->
+     
+    
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -550,7 +587,7 @@
   </div>
 </div>
 
-      <!-- 11. ÜRÜN -->
+
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
           <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -575,7 +612,8 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+           
+          
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -592,7 +630,7 @@
         </div>
       </div>
 
-      <!-- 12. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/37.jpeg" alt="Tavşan Temalı Doğum Hediyeliği" class="w-full h-full object-cover">
@@ -608,7 +646,6 @@
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
           </div>
 
-            <!-- İNCELE BUTONU -->
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -626,7 +663,7 @@
         </div>
       </div>
 
-      <!-- 13. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="35">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/38.jpeg" alt="Mantar Tıpalı Tüp Kolonya" class="w-full h-full object-cover">
@@ -642,11 +679,9 @@
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.950,00</span></span>
           </div>
 
-            <!-- İNCELE BUTONU -->
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
-
 
           <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
             <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
@@ -661,7 +696,7 @@
         </div>
       </div>
 
-      <!-- 14. ÜRÜN -->
+      
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="kina" data-unit-price="30">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
           <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -685,7 +720,7 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">900,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+        
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -704,7 +739,6 @@
       </div>
 
 
-<!-- 15. ÜRÜN: -->
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="80">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
     <img src="img/23.jpeg" alt="Renkli Boncuklu İsimli Anahtarlık" class="w-full h-full object-cover">
@@ -716,18 +750,18 @@
       <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Canlı renkli boncuk dizilimli, harfli ve kişiye özel isim tasarımlı şık anahtarlık. (30 adet ve üzeri alımlarda adet fiyatı ₺50)</p>
     </div>
     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
-      <!-- Min adet 1 olarak güncellendi -->
+    
       <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 1</span>
       <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">80,00</span></span>
     </div>
-      <!-- İNCELE BUTONU -->
+ 
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
 
     <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
       <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
-        <!-- Adet değişimi 1'erli yapıldı -->
+       
         <button onclick="changeQty(this, -1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
         <input type="number" value="1" min="1" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
         <button onclick="changeQty(this, 1, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
@@ -739,7 +773,6 @@
   </div>
 </div>
 
-<!-- 16. ÜRÜN: -->
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="35">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -755,23 +788,23 @@
   </div>
   <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
     <div>
-      <!-- Başlık ve metin açacaklı magnet konseptine uygun şekilde güncellendi -->
+     
       <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Kişiye Özel Tasarım Açacaklı Magnet</h3>
       <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">İsim, tarih ve Hoş Geldin Bebek mesajı yazılı, isteğe göre fotoğraf ve konsept uyarlamalı açacaklı magnet hatıralık.</p>
     </div>
     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
-      <!-- Min adet 30 ve fiyat 30 adet için 1.050 TL yapıldı (Birim: ₺35) -->
+     
       <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
       <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.050,00</span></span>
     </div>
-      <!-- İNCELE BUTONU -->
+      
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
 
     <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
       <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
-        <!-- Min 30 adet kuralına uygun artış ve azalış -->
+       
         <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
         <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
         <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
@@ -784,7 +817,7 @@
 </div>
 
 
-      <!-- 17. ÜRÜN -->
+
       <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="1500">
         <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
           <img src="img/26.jpeg" alt="Cam Kutulu Nikah Çikolatası" class="w-full h-full object-cover">
@@ -799,7 +832,8 @@
             <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-box text-luxurygold mr-0.5"></i> Kutuda 100 Çikolata</span>
             <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.500,00</span></span>
           </div>
-            <!-- İNCELE BUTONU -->
+          
+          
           <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
             <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
           </button>
@@ -818,8 +852,6 @@
       </div>
 
 
-
-      <!-- 18. ÜRÜN: -->
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="45">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -863,7 +895,7 @@
   </div>
 </div>
 
-<!-- 19. ÜRÜN: -->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -905,7 +937,7 @@
   </div>
 </div>
 
-<!-- 20. ÜRÜN: -->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="40">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -948,7 +980,7 @@
   </div>
 </div>
 
-<!-- 21. ÜRÜN:  -->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="2850">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
      <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -992,7 +1024,7 @@
 
 
 
-<!-- 22. ÜRÜN:  -->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="2850">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
      <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -1036,7 +1068,7 @@
 </div>
 
 
-<!-- 23. ÜRÜN: -->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="30">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
     <img src="img/39.jpeg" alt="Sihirli Tohumlu Çiçek Hediyelik" class="w-full h-full object-cover">
@@ -1068,7 +1100,7 @@
   </div>
 </div>
 
-<!-- 24. ÜRÜN:-->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="45">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
     <img src="img/40.jpeg" alt="Resimli Kapaklı Cep Aynası" class="w-full h-full object-cover">
@@ -1101,7 +1133,7 @@
   </div>
 </div>
 
-<!-- 25. ÜRÜN:-->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="dogum" data-unit-price="45">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
@@ -1144,7 +1176,7 @@
   </div>
 </div>
 
-<!-- 26. ÜRÜN:-->
+
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
     <img src="img/36.jpeg" alt="Lotus Mum Hediyelik" class="w-full h-full object-cover">
@@ -1152,7 +1184,7 @@
   </div>
   <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
     <div>
-      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Zarif Kristal Kapaklı Lotus Çiçeği Dekoratif Mum</h3>
+      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Zarif Lotus Çiçeği Dekoratif Mum</h3>
       <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Lotus çiçeği formunda hazırlanmış, özel isim etiketli ve kurdele süslemeli dekoratif mum.</p>
     </div>
     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
@@ -1178,7 +1210,6 @@
 </div>
 
 
-<!-- 27. ÜRÜN: Kod -->
 <div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="bebek" data-unit-price="4300">
   <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
    
@@ -1211,49 +1242,6 @@
   </div>
 </div>
 
-      <!-- 28. ÜRÜN:-->
-<div class="product-card bg-white border border-champagne/60 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nisan" data-unit-price="40">
-  <div class="h-36 sm:h-48 md:h-64 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-     <div class="product-slider w-full h-full flex transition-transform duration-300 ease-out">
-      
-      <img src="img/29.jpeg" alt="lotus mum - 1" class="w-full h-full object-cover shrink-0">
-      <img src="img/30.jpeg" alt="lotus mum - 2" class="w-full h-full object-cover shrink-0">
-    </div>
-    <button type="button" onclick="slideProductImg(this, -1, event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
-      <i class="fa-solid fa-chevron-left"></i>
-    </button>
-    <button type="button" onclick="slideProductImg(this, 1, event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-ink/40 hover:bg-ink text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center text-[10px] backdrop-blur z-10 transition-colors">
-      <i class="fa-solid fa-chevron-right"></i>
-    </button>
-    <span class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-luxurygold shadow-sm">Nikah & Nişan</span>
-  </div>
-  <div class="p-3 md:p-6 flex flex-col flex-grow space-y-2 md:space-y-4">
-    <div>
-      <h3 class="font-serif text-sm md:text-lg font-medium text-ink line-clamp-1">Zarif Karton Kapaklı Lotus Çiçeği Dekoratif Mum</h3>
-      <p class="text-[10px] md:text-xs text-ink/60 mt-0.5 font-light line-clamp-2">Lotus çiçeği formunda hazırlanmış, özel isim etiketli ve kurdele süslemeli dekoratif mum.</p>
-    </div>
-    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between pt-1.5 md:pt-2 border-t border-champagne/40 gap-1">
-      <span class="text-[9px] md:text-xs text-ink/50"><i class="fa-solid fa-circle-exclamation text-luxurygold mr-0.5"></i> Min: 30</span>
-      <span class="text-base md:text-xl font-semibold text-ink">₺<span class="total-price-display">1.200,00</span></span>
-    </div>
-
-    <button type="button" onclick="openImageModalFromBtn(this, event)" class="w-full border border-luxurygold/60 text-luxurygold hover:bg-luxurygold hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-1.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 mt-1">
-            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Ürünü İncele
-    </button>
-
-    <div class="space-y-1.5 md:space-y-2 mt-auto pt-1">
-      <div class="flex items-center justify-between border border-champagne rounded-lg overflow-hidden bg-cream/30 h-8 md:h-10">
-        <button onclick="changeQty(this, -5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-minus text-[10px]"></i></button>
-        <input type="number" value="30" min="30" readonly class="qty-input w-10 md:w-16 text-center bg-transparent border-none text-xs md:text-sm font-semibold text-ink focus:outline-none focus:ring-0">
-        <button onclick="changeQty(this, 5, event)" class="px-2 md:px-4 h-full hover:bg-champagne/50 text-ink/60 transition-colors duration-200"><i class="fa-solid fa-plus text-[10px]"></i></button>
-      </div>
-      <button onclick="openOrderModal('Lotus Çiçeği Dekoratif Mum', this, event)" class="w-full bg-ink hover:bg-luxurygold text-cream hover:text-ink font-semibold text-[9px] md:text-xs uppercase tracking-wider py-2 md:py-3.5 rounded-lg transition-all duration-300">
-        Sipariş Ver
-      </button>
-    </div>
-  </div>
-</div>
-      
 </div>
   </section>
 
@@ -1267,7 +1255,7 @@
       </div>
 
       <div class="space-y-3">
-        <!-- 1. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Sipariş süreci nasıl işliyor ve kapora zorunlu mu?</span>
@@ -1278,7 +1266,7 @@
           </div>
         </div>
 
-        <!-- 2. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Kişiselleştirme (isim/tarih) değişikliklerini nereden iletiyoruz?</span>
@@ -1289,7 +1277,7 @@
           </div>
         </div>
 
-        <!-- 3. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Minimum sipariş adedinin altında sipariş verebilir miyim?</span>
@@ -1300,7 +1288,7 @@
           </div>
         </div>
 
-        <!-- 4. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Siparişler ne kadar sürede kargoya verilir?</span>
@@ -1311,7 +1299,7 @@
           </div>
         </div>
 
-        <!-- 5. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Kargo ücreti kime aittir ve ücretsiz kargo şartı nedir?</span>
@@ -1322,7 +1310,7 @@
           </div>
         </div>
 
-        <!-- 6. Soru -->
+        
         <div class="bg-cream border border-champagne rounded-xl overflow-hidden shadow-sm">
           <button onclick="toggleFaq(this)" class="w-full p-4 text-left font-medium text-xs md:text-sm text-ink flex justify-between items-center gap-4">
             <span>Ürünlerde renk, çiçek veya kurdele konsepti değiştirilebilir mi?</span>
@@ -1336,7 +1324,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  
   <footer class="bg-ink text-cream/70 text-xs py-8 px-4 border-t border-champagne/20 text-center">
     <div class="flex justify-center gap-6 mb-4 text-base">
       <a href="https://wa.me/905423801950" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
@@ -1352,7 +1340,6 @@
 
 
   
-  <!-- ÜRÜN İNCELEME FOTO MODALI (NET & EKSİKSİZ BÜYÜTME) -->
   <div id="image-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300" onclick="closeImageModal()">
     <div class="relative max-w-4xl max-h-[90vh] w-full bg-cream rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center p-2 md:p-4" onclick="event.stopPropagation()">
       <button onclick="closeImageModal()" class="absolute top-3 right-3 bg-ink/70 hover:bg-ink text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors z-20">
@@ -1365,7 +1352,7 @@
   </div>
 
 
-  <!-- Sipariş Modalı -->
+  
   <div id="order-modal" class="fixed inset-0 z-50 bg-ink/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
     <div class="bg-cream border border-luxurygold/30 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col">
       <div class="bg-gradient-to-r from-ink to-ink/90 p-6 text-cream relative shrink-0">
@@ -1400,12 +1387,12 @@
           </div>
           <div class="grid grid-cols-3 gap-2 text-xs text-ink/80 border-b border-champagne/60 pb-2">
             <span class="font-medium">Alıcı:</span>
-            <span class="col-span-2">Mehrinaz Aleyna ÖZCAN</span>
+            <span class="col-span-2">LEYLA BAYRAK</span>
           </div>
           <div class="grid grid-cols-3 gap-2 text-xs text-ink/80">
             <span class="font-medium">IBAN:</span>
             <span class="col-span-2 font-mono tracking-tight select-all bg-white/80 px-2 py-0.5 rounded border border-champagne flex items-center justify-between">
-              TR56 0009 9029 1498 1800 1000 02
+              TR56 0009 9029 1498
               <i class="fa-regular fa-copy text-luxurygold cursor-pointer" title="Kopyala" onclick="navigator.clipboard.writeText('TR99 0001 2000 3000 4000 5000 66')"></i>
             </span>
           </div>
@@ -1437,6 +1424,87 @@
       </div>
     </div>
   </div>
+
+  <div class="fixed bottom-6 left-6 z-50 flex flex-col items-start font-sans">
+  
+      <div id="ai-chat-drawer" class="chat-closed mb-4 w-[90vw] sm:w-[360px] h-[500px] bg-cream border border-champagne rounded-3xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300">
+    
+    
+    <div class="bg-ink text-cream p-4 flex items-center justify-between border-b border-luxurygold/30">
+      <div class="flex items-center gap-3">
+        <div class="relative">
+          <div class="w-10 h-10 rounded-full bg-champagne flex items-center justify-center text-ink shadow-inner border border-luxurygold">
+            <i class="fa-solid fa-wand-magic-sparkles text-luxurygold text-base animate-pulse"></i>
+          </div>
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-ink rounded-full"></span>
+        </div>
+        <div>
+          <h3 class="font-serif font-semibold text-sm tracking-wide text-cream flex items-center gap-1.5">
+            Curly AI <span class="text-[9px] bg-luxurygold/20 text-luxurygold px-1.5 py-0.5 rounded-full uppercase tracking-widest border border-luxurygold/30">Asistan</span>
+          </h3>
+          <p class="text-[10px] text-softpink/80 font-light">Size nasıl yardımcı olabilirim?</p>
+        </div>
+      </div>
+      <button onclick="toggleAiChat()" class="text-cream/70 hover:text-luxurygold transition-colors p-1.5 rounded-full hover:bg-white/10">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+
+    
+    <div id="chat-messages" class="chat-messages-container flex-1 p-4 overflow-y-auto space-y-3 bg-gradient-to-b from-cream via-cream to-champagne/20 text-xs">
+      
+
+      <div class="flex items-start gap-2">
+        <div class="w-7 h-7 rounded-full bg-ink text-luxurygold flex items-center justify-center shrink-0 text-[11px] shadow-sm mt-0.5">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <div class="chat-bubble-ai p-3 max-w-[82%] shadow-sm text-ink/90 font-light leading-relaxed">
+          Merhaba! ✨ <strong>Curly Design Studio</strong>’ya hoş geldiniz. Özel gün tasarımlarımız, minimum siparişler veya teslimat süreçlerimizle ilgili merak ettiğiniz her şeyi sorabilirsiniz!
+        </div>
+      </div>
+
+    </div>
+
+    <div class="px-3 py-2 bg-champagne/30 border-t border-champagne/60 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+      <button onclick="sendQuickMessage('Minimum sipariş miktarınız nedir?')" class="bg-cream hover:bg-luxurygold hover:text-ink text-ink/80 text-[10px] px-2.5 py-1 rounded-full border border-champagne shrink-0 transition-all duration-200">
+        📦 Min. Sipariş?
+      </button>
+      <button onclick="sendQuickMessage('Teslimat ve kargo süresi ne kadar?')" class="bg-cream hover:bg-luxurygold hover:text-ink text-ink/80 text-[10px] px-2.5 py-1 rounded-full border border-champagne shrink-0 transition-all duration-200">
+        🚚 Kargo & Teslimat?
+      </button>
+      <button onclick="sendQuickMessage('Kişiselleştirme yapabiliyor musunuz?')" class="bg-cream hover:bg-luxurygold hover:text-ink text-ink/80 text-[10px] px-2.5 py-1 rounded-full border border-champagne shrink-0 transition-all duration-200">
+        🎨 Kişiselleştirme?
+      </button>
+      <button onclick="sendQuickMessage('Nasıl sipariş verebilirim?')" class="bg-cream hover:bg-luxurygold hover:text-ink text-ink/80 text-[10px] px-2.5 py-1 rounded-full border border-champagne shrink-0 transition-all duration-200">
+        💬 Sipariş Süreci?
+      </button>
+    </div>
+
+    <form id="ai-chat-form" onsubmit="handleAiSubmit(event)" class="p-3 bg-cream border-t border-champagne flex items-center gap-2">
+      <input type="text" id="ai-user-input" placeholder="Sorunuzu yazın..." class="flex-1 bg-white border border-champagne/80 rounded-full px-4 py-2 text-xs text-ink placeholder:text-ink/40 focus:outline-none focus:border-luxurygold transition-colors">
+      <button type="submit" class="bg-ink hover:bg-luxurygold text-cream hover:text-ink w-8 h-8 rounded-full flex items-center justify-center text-xs transition-all duration-300 shrink-0 shadow-md">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+
+  
+  <button onclick="toggleAiChat()" class="relative bg-ink hover:bg-ink/90 text-luxurygold border-2 border-luxurygold/60 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 group">
+    <i class="fa-solid fa-wand-magic-sparkles text-2xl group-hover:rotate-12 transition-transform duration-300"></i>
+  
+    
+    <span class="absolute -top-1 -right-1 flex h-4 w-4">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-luxurygold opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-4 w-4 bg-luxurygold text-ink text-[9px] font-bold items-center justify-center">1</span>
+    </span>
+    
+    
+    <span class="absolute left-16 bg-ink text-cream text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-luxurygold/30">
+      Canlı Asistan
+    </span>
+  </button>
+
+</div>
 
 <script>
     let activeOrder = { productName: '', quantity: 30, unitPrice: 0, total: 0, deposit: 0 };
@@ -1566,7 +1634,6 @@
       modal.classList.add('opacity-0', 'pointer-events-none');
     }
 
-    // --- GÜNCELLENEN DEDAY MODAL FONKSİYONU ---
     function openProductDetailModal(card) {
       const imgs = card.querySelectorAll('.product-slider img, img');
       const title = card.querySelector('h3').innerText;
@@ -1583,9 +1650,9 @@
         const newImg = document.createElement('img');
         newImg.src = img.src;
         newImg.alt = img.alt || title;
-        newImg.className = 'w-full h-full object-cover shrink-0 cursor-zoom-in'; // Tıklanabilir kursör eklendi
+        newImg.className = 'w-full h-full object-cover shrink-0 cursor-zoom-in'; 
         
-        // Fotoğrafa tıklayınca tam ekran büyük halini açma tetikleyicisi
+        
         newImg.onclick = () => openImageModal(img.src);
         
         modalSlider.appendChild(newImg);
@@ -1668,7 +1735,6 @@
       slider.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    // Fotoğraf Modalı Açma (Kart Görseline Tıklandığında)
     function openImageModal(container) {
       const slider = container.querySelector('.product-slider');
       let activeImgSrc = "";
@@ -1687,7 +1753,6 @@
       modal.classList.remove('hidden');
     }
 
-    // Fotoğraf Modalı Açma ("İncele" Butonuna Basıldığında)
     function openImageModalFromBtn(btn, event) {
       if(event) event.stopPropagation();
       const card = btn.closest('.product-card');
@@ -1699,6 +1764,152 @@
       document.getElementById('image-modal').classList.add('hidden');
     }
 
+
+  function toggleAiChat() {
+    const drawer = document.getElementById('ai-chat-drawer');
+    drawer.classList.toggle('chat-closed');
+    drawer.classList.toggle('chat-open');
+  }
+
+  function sendQuickMessage(text) {
+    document.getElementById('ai-user-input').value = text;
+    handleAiSubmit(new Event('submit'));
+  }
+
+  function handleAiSubmit(e) {
+    e.preventDefault();
+    const input = document.getElementById('ai-user-input');
+    const query = input.value.trim();
+    if (!query) return;
+
+    appendUserMessage(query);
+    input.value = '';
+
+    const typingId = showTypingIndicator();
+
+    setTimeout(() => {
+      removeTypingIndicator(typingId);
+      const botResponse = generateAiResponse(query);
+      appendBotMessage(botResponse);
+    }, 600);
+  }
+
+  function appendUserMessage(text) {
+    const chatContainer = document.getElementById('chat-messages');
+    const msgHTML = `
+      <div class="flex items-end justify-end gap-2">
+        <div class="chat-bubble-user p-3 max-w-[82%] text-xs shadow-sm font-light">
+          ${escapeHTML(text)}
+        </div>
+      </div>
+    `;
+    chatContainer.insertAdjacentHTML('beforeend', msgHTML);
+    scrollToBottom();
+  }
+
+  function appendBotMessage(text) {
+    const chatContainer = document.getElementById('chat-messages');
+    const msgHTML = `
+      <div class="flex items-start gap-2">
+        <div class="w-7 h-7 rounded-full bg-ink text-luxurygold flex items-center justify-center shrink-0 text-[11px] shadow-sm mt-0.5">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <div class="chat-bubble-ai p-3 max-w-[82%] text-xs shadow-sm text-ink/90 font-light leading-relaxed">
+          ${text}
+        </div>
+      </div>
+    `;
+    chatContainer.insertAdjacentHTML('beforeend', msgHTML);
+    scrollToBottom();
+  }
+
+  function showTypingIndicator() {
+    const chatContainer = document.getElementById('chat-messages');
+    const id = 'typing-' + Date.now();
+    const typingHTML = `
+      <div id="${id}" class="flex items-start gap-2">
+        <div class="w-7 h-7 rounded-full bg-ink text-luxurygold flex items-center justify-center shrink-0 text-[11px]">
+          <i class="fa-solid fa-sparkles animate-spin"></i>
+        </div>
+        <div class="chat-bubble-ai p-3 text-ink/50 text-xs italic">
+          Curly AI yanıt hazırlıyor...
+        </div>
+      </div>
+    `;
+    chatContainer.insertAdjacentHTML('beforeend', typingHTML);
+    scrollToBottom();
+    return id;
+  }
+
+  function removeTypingIndicator(id) {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  }
+
+  function scrollToBottom() {
+    const chatContainer = document.getElementById('chat-messages');
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+    );
+  }
+
+function generateAiResponse(input) {
+  const text = input.toLowerCase();
+
+  if (text.includes('kapora') || text.includes('süreç') || text.includes('ödeme') || text.includes('zorunlu')) {
+    return "Kişiye özel tasarım hazırlandığı için siparişinizin onaylanması adına <strong>%50 kapora ödemesi</strong> talep edilmektedir. Kalan tutar ürünleriniz kargolanmadan önce tarafınızdan iletilir. 💳";
+  }
+
+  if (text.includes('isim') || text.includes('tarih') || text.includes('değişiklik') || text.includes('form') || text.includes('nereden')) {
+    return "Sipariş ver butonuna bastığınızda açılan form üzerinden ve otomatik WhatsApp yönlendirmesiyle isim, tarih veya konsept detaylarınızı eksiksiz iletebilirsiniz. ✍️";
+  }
+
+  if (text.includes('minimum') || text.includes('min') || text.includes('en az') || text.includes('altında') || text.includes('30')) {
+    return "Atölye üretim süreçlerimiz ve malzeme hazırlıkları sebebiyle minimum sipariş miktarımız <strong>30 adettir</strong>. Özel çikolata kutulu setlerimizde ise minimum sipariş <strong>1 kutudur</strong>. ✨";
+  }
+
+  if (text.includes('süre') || text.includes('hazırlık') || text.includes('kaç gün') || text.includes('acil') || text.includes('teslimat')) {
+    return "Tüm ürünlerimiz el işçiliğiyle hazırlandığı için hazırlık süresi yoğunluğa göre <strong>7-15 iş günü</strong> arasındadır. Acil organizasyonlarınız için sipariş öncesinde WhatsApp üzerinden bizimle iletişime geçebilirsiniz. 🚚";
+  }
+
+  if (text.includes('kargo') || text.includes('ücret') || text.includes('bedava') || text.includes('100')) {
+    return "Kargo ücreti alıcıya aittir. Ancak <strong>100 adet ve üzeri</strong> siparişlerinizde kargo ücreti tarafımızdan karşılanmaktadır (<strong>ÜCRETSİZ KARGO</strong>). 📦";
+  }
+
+  if (text.includes('renk') || text.includes('çiçek') || text.includes('kurdele') || text.includes('konsept') || text.includes('değiş')) {
+    return "Evet! Organizasyon temanıza veya kişisel zevkinize göre kurdele rengi, çiçek türü ve kart konsepti üzerinde dilediğiniz güncellemeleri yapabiliyoruz. 🎨";
+  }
+
+  if (text.includes('kına') || text.includes('yelpaze') || text.includes('bileklik')) {
+    return "Kına geceleriniz için özel olarak tasarladığımız Yonca Figürlü Kına Bilekliği, Kırmızı Çiçekli Yelpazeler ve Cam Tüp Kına hediyeliklerimizi katalogdan inceleyebilirsiniz. ❤️";
+  }
+
+  if (text.includes('nikah') || text.includes('kolonya') || text.includes('tüp') || text.includes('mühür')) {
+    return "Cam tüp ve mühürlü altıgen şişe kolonyalarımız en popüler nikah & bayram hediyeliklerimizdendir! Kaliteli içerik ve şık sunum kartlarıyla hazırlanmaktadır. 🌸";
+  }
+
+  if (text.includes('doğum') || text.includes('bebek') || text.includes('atlı karınca') || text.includes('tavşan') || text.includes('hastane')) {
+    return "Doğum ve bebek konseptlerimiz arasında Nostaljik Atlı Karınca, Tavşan Temalı Epoksi Magnetler ve İsimli Bulut Pleksi Anahtarlıklar bulunmaktadır! 🧸";
+  }
+
+  if (text.includes('fiyat') || text.includes('ücreti') || text.includes('kaç para') || text.includes('tl')) {
+    return "Tüm ürünlerimizin birim ve adetli fiyat detayları katalog bölümünde şeffaf olarak belirtilmiştir. Adet miktarını seçerek anlık toplam fiyatı görebilirsiniz. 🏷️";
+  }
+
+  if (text.includes('merhaba') || text.includes('selam') || text.includes('hey')) {
+    return "Merhaba! Harika bir gün dilerim. Curly Design Studio ürünleri veya siparişiniz hakkında size nasıl yardımcı olabilirim? 😊";
+  }
+
+  if (text.includes('teşekkür') || text.includes('sağol') || text.includes('tesekkür')) {
+    return "Rica ederim! Her zaman yardımcı olmaktan mutluluk duyarım. Başka bir sorunuz olursa buradayım! ✨";
+  }
+
+  return "Sorduğunuz konu hakkında detaylı bilgi vermek ve size özel tasarım seçeneklerini görüşmek isteriz. Dilerseniz ekrandaki WhatsApp butonuna tıklayarak doğrudan bizimle iletişime geçebilirsiniz! 📲";
+}
 </script>
 </body>
 </html>
